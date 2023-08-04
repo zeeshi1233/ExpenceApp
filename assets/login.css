@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+.container{
+display: grid;
+place-items: center;
+width: 100%;
+height: 100vh;
+}
+.form{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+width:400px;
+outline:1px solid rgb(218, 218, 218);
+box-shadow:20px 20px 20px rgba(0,0, 0,0.2);
+height:65%;
+position:relative;
+}
+.form .svg1 {
+position:absolute;
+top:0px;
+width:100%;
+background: url(img/wave.svg);
+height:100px;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.form .svg {
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    background: url(img/sign.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.form .input{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 85px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form .input .field{
+padding: 5px;
+word-wrap: break-word;
+line-height:30px ;
+width:300px;
+}
+
+
+.form .input .field label{
+    font-size: 20px;
+line-height: 10px;
+}
+
+.form .input .field input{
+border-radius: 10px;
+    border: none;
+    outline: 1px solid rgb(218, 229, 241);
+    width: 100%;
+min-height: 30px;
+padding-left: 10px;
+}
+
+.form .input .field button{
+    background-color: transparent;
+    border: none;
+    outline: 1px solid rgb(46, 127, 214);
+    width: 110px;
+    height: 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    font-size: 20px;
+}
+
+.form .input .field button:hover{
+    background-color: rgb(46, 127, 214);
+    border: none;
+    outline: 1px solid rgb(255, 255, 255);
+    color: white;
+
+}
